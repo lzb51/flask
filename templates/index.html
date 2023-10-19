@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Solution</title>
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="al" placeholder="Altura da caixa (cm)"/>
+        <input type="text" name="la" placeholder="Largura da caixa (cm)"/>
+        <input type="text" name="pr" placeholder="Profundidade da caixa (cm)"/>
+        <input type="text" name="pe" placeholder="Peso da caixa "/>
+        <input type="submit" value = "Enviar" />
+    </form>
+
+    
+    {% if result != None %}
+    <p>Seu resultado é : <b>{{ result }}</b></p>
+    {% endif %}
+</body>
+</html>
